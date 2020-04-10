@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Welcome to BirdVision
 
-You can use the [editor on GitHub](https://github.com/Snaithj/BirdVision/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+We are an indterdisciplinary team working to gather data on window related bird deaths and how to prevent them.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What is BirdVision?
 
-### Markdown
+BirdVision is a system for recognizing birds and bird window strikes using machine vision. It is composed of several different data gathering, data management, and data processing modules which we connected into a mostly automated pipeline.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How does it work?
 
-```markdown
-Syntax highlighted code block
+There are several modules to the BirdVision system:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+**Module 1 - Data Collection**
+Data collection in BirdVision currently comes in two forms, video frames and sensor data. In order to train the neural network, we needed to build a data set. To do that, we created sensors which could be installed on windows and detect the vibrations from a bird strike.
+Once the strike is detected, the vibration data is collected and a camera is activated to save image frames at the time of the strike. The data is saved to a local file on the systems running the sensors.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```
+**Module 2 - Data Transfer**
+Once the data has been saved to a local folder, a script running every five minutes syncs the new files with an S3 bucket on the Amazon Sagemaker platform. This bucket acts as a repository which can then be accessed by other Sagemaker tools.
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Snaithj/BirdVision/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+**Module 3 - Image Annotation**
+From the S3 Bucket, the images get collated into labelling jobs. 
+```
