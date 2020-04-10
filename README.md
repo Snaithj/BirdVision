@@ -21,7 +21,7 @@ Once the strike is detected, the vibration data is collected and a camera is act
 save image frames at the time of the strike. The data is saved to a local file on the systems 
 running the sensors.
 ```
-![BirdVision Flowchart](/images/SensorSetup.png)
+![Sensor Setup](/images/SensorSetup.jpg)
 
 **Module 2 - Data Transfer**
 ```
