@@ -10,7 +10,7 @@ BirdVision is a system for recognizing birds and bird window strikes using machi
 
 There are several modules to the BirdVision system:
 
-![BirdVision Flowchart](https://snaithj.github.com/BirdVision/images/BirdVision Flowchart.png)
+![BirdVision Flowchart](/images/BirdVisionFlowchart.png)
 
 ```
 **Module 1 - Data Collection**
