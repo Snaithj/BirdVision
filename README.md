@@ -35,7 +35,7 @@ which can then be accessed by other Sagemaker tools.
 
 **Module 3 - Image Annotation**
 
-![Bird Labelling Job](/images/BirdLabellingJob.png)
+![Bird Labelling Job](/images/BirdLabellingJob.PNG)
 
 ```
 From the S3 Bucket, the images get collated into labelling jobs. From there, volunteers can apply labels to the images using a simple and intuitive interface. If there is a bird in the image, they click the appropriate button. This user input will allow us to create a large enough database to finish training our neural network.
