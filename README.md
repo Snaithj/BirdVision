@@ -38,15 +38,25 @@ which can then be accessed by other Sagemaker tools.
 ![Bird Labelling Job](/images/BirdLabellingJob.PNG)
 
 ```
-From the S3 Bucket, the images get collated into labelling jobs. From there, volunteers can apply labels to the images using a simple and intuitive interface. If there is a bird in the image, they click the appropriate button. This user input will allow us to create a large enough database to finish training our neural network.
+From the S3 Bucket, the images get collated into labelling jobs. From there, volunteers can 
+apply labels to the images using a simple and intuitive interface. If there is a bird in the 
+image, they click the appropriate button. This user input will allow us to create a large 
+enough database to finish training our neural network.
 ```
 **Module 4 - Neural Network**
 ```
-This module is currently in the works. As we grow our dataset, we are training a neural network to complete the jobs in Module 3. The more data that passes through the system, the better the neural network gets at classifying what is and isn’t a bird/window collision. The system is already well trained at detecting birds, we are now pivoting to detecting window collisions.
+This module is currently in the works. As we grow our dataset, we are training a neural network
+to complete the jobs in Module 3. The more data that passes through the system, the better the
+neural network gets at classifying what is and isn’t a bird/window collision. The system is 
+already well trained at detecting birds, we are now pivoting to detecting window collisions.
 ```
 
 ### What still needs to be done?
-BirdVision is still a work in progress. Our vision is to have live or recorded footage from multiple sources constantly being run through the neural network in order to provide the most robust coverage possible. To accomplish this, we need to transition from physical sensors to pure video. We also need to set up a way for labelling jobs to be created automatically.
+BirdVision is still a work in progress. Our vision is to have live or recorded footage from 
+multiple sources constantly being run through the neural network in order to provide the most 
+robust coverage possible. To accomplish this, we need to transition from physical sensors to 
+pure video. We also need to set up a way for labelling jobs to be created automatically.
 
 ### How can you help?
-If you would like to help us label data, or are interested in using our framework for your own image/footage recognition, please contact us at [email address]. 
+If you would like to help us label data, or are interested in using our framework for your own 
+image/footage recognition, please contact us at [email address]. 
